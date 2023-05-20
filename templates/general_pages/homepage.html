@@ -1,0 +1,29 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %} 
+  <title>Jataayu</title>
+    <link href="{{ url_for('static', path='style/styles.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', path='script/homepage.js') }}"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% endblock %}
+
+{% block content %}
+
+  <div class="w3-container w3-center">
+      <header class="w3-container w3-light-blue">
+          <h1 class="w3-cursive">Jatayu Inference Platform for Footage Classification</h1>
+      </header>
+
+      </div>
+        <hr>
+<div class="w3-container w3-center">
+<form action="/inference" enctype="multipart/form-data" method="post">
+    <input class="w3-cursive w3-btn w3-round w3-black w3-block " name="files" type="file">
+    <hr>
+    <input class="w3-cursive w3-button w3-block w3-green w3-round-xxlarge" type="submit">
+</form>
+</div>
+
+
+{% endblock %} 

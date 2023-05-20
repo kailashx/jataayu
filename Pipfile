@@ -4,6 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+torch = "*"
+numpy = "*"
+pydantic="*"
+fastapi="*"
+uvicorn="*"
+#for templates  #new
+jinja2="*"
+python-multipart = "*"
+opencv-python = "*"
+torchvision = "*"
+numba = "*"
+"stomp.py" = "*"
 
 [dev-packages]
 
