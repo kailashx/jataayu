@@ -87,7 +87,7 @@ if __name__ == "__main__":
             # Quit when 'x' is pressed
             output = model(frame)
             loss = criterion(output, frame)
-            if (loss > 0.1) & (report_c % 3 == 0):
+            if (loss > 0.16) & (report_c % 3 == 0):
                 report()
                 report_c = report_c + 1
             frame_processed = frame_processed + 1

@@ -97,12 +97,8 @@ if __name__ == "__main__":
             # detect_change(footage)
             # Quit when 'x' is pressed
             boxes, classes, labels = detect_utils.predict(frame, model, device, threshold)
-            print(classes)
             # draw bounding boxes
-            #image = detect_utils.draw_boxes(boxes, classes, labels, image)
-            #if (loss > 0.1) & (report_c % 3 == 0):
-            #    report()
-            #    report_c = report_c + 1
+            image = detect_utils.draw_boxes(boxes, classes, labels, frame)
             frame_processed = frame_processed + 1
             print(f"Frame_processed = {frame_processed}, Hash = {hash(frame)}")
 
